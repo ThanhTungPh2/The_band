@@ -127,31 +127,30 @@ body {
     font-weight: bolder;
 }
 /* End__Slider */
-.About,.Tour {
+.About,.Tour ,.Contact{
     padding: 6.4rem 1.6rem;
     margin: 0 auto;
     max-width: 80rem;
 }
-.About__heading,.Tour__heading{
+.About__heading,.Tour__heading,.Contact__heading{
     text-align: center;
 }
-.About__heading h2 ,.Tour__heading h2{
+.About__heading h2 ,.Tour__heading h2,.Contact__heading h2{
     letter-spacing: 4px;
     font-family: "Segoe UI",Arial,sans-serif;
     font-weight: 400;
     margin: 10px 0;
     font-size: 30px;
 }
-.About__heading p,.About__text ,.Tour__heading p{
+.About__text{
     font-size: 15px;
-    margin:15px 0;
+    margin:15px 0;text-align: justify;
 }
-.About__heading p,.Tour__heading p{
+.About__heading p,.Tour__heading p,.Contact__heading p{
     opacity: 0.60;
     font-style: italic;
-}
-.About__text {
-    text-align: justify;
+    font-size: 15px;
+    margin:15px 0;
 }
 .About__layout {
     margin-top: 48px;
@@ -199,7 +198,7 @@ body {
 }
 
 .Tour__places {
-    margin: 3.2rem -8px 0;
+    margin: 3.2rem -8px 7rem;
 }
 .Tour__item {
     float: left;
@@ -241,4 +240,54 @@ body {
     background-color:#ccc;
     color:black;
     cursor: pointer;
+}
+.Contact__body {
+    margin-top: 4.6rem;
+    font-size:18px;
+}
+.Contact__info {
+    width: 50%;
+    float: left;
+}
+.Contact__info i {
+    float: left;
+    width: 30px;
+    line-height: 1.5;
+}
+.Contact__form {
+    width:50%;
+    float: right;
+}
+.Contact__form input {
+    border:1px solid #ccc;
+    padding:8px;
+    font-size:15px;
+    line-height:1.5;
+}
+.form__message {
+    width: 100%;
+}
+.form {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.form input {
+    width: calc(50% - 8px);
+  
+}
+.btn {
+    float:right;
+    line-height:1.5;
+    margin: 16px 0;
+    color: white;
+    background-color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 0;
+    font-size:15px;
+}
+.btn:hover {
+    background-color: #ccc;
+    color: black;
 }
