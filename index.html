@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>The Band</title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
         <link
             rel="stylesheet"
             href="./assets\font\themify-icons-font\themify-icons\themify-icons.css"
@@ -14,6 +13,7 @@
             rel="stylesheet"
             href="./assets/font/fontawesome-free-5.15.4-web/css/all.css"
         />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
         <div class="header">
@@ -195,27 +195,39 @@
                         <i class="ti-email"></i> Email: mail@mail.com
                     </p>
                 </div>
-                <form class="Contact__form">
-                    <div class="form">
-                        <input
-                            type="text"
-                            class="form__name"
-                            placeholder="Name"
-                        />
-                        <input
-                            type="text"
-                            class="form__email"
-                            placeholder="Email"
-                        />
-                    </div>
-                    <input
-                        type="text"
-                        class="form__message"
-                        placeholder="Message"
-                    />
-                    <button class="btn">SEND</button>
-                </form>
-                <div class="clear"></div>
+                <div class="col col-half contact__form">
+                    <form action="">
+                        <div class="row">
+                            <div class="col col-half">
+                                <input
+                                    type="text"
+                                    placeholder="Name"
+                                    class="form-control"
+                                    required
+                                />
+                            </div>
+                            <div class="col col-half">
+                                <input
+                                    type="email"
+                                    placeholder="Email"
+                                    class="form-control"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="row mt-8">
+                            <div class="col col-full">
+                                <input
+                                    type="text"
+                                    placeholder="message"
+                                    class="form-control"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <button>SEND</button>
+                    </form>
+                </div>
             </div>
         </div>
     </body>
