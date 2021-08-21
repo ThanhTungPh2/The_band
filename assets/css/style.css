@@ -17,6 +17,27 @@ body {
 .color__white {
     color: white !important;
 }
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half {
+    width: 50%;
+}
+.col-full {
+    width: 100%;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
 .clear {
     clear: both;
 }
@@ -130,7 +151,7 @@ body {
 .About,
 .Tour,
 .Contact {
-    padding: 6.4rem 1.6rem;
+    padding: 6.4rem 1.6rem 11.2rem;
     margin: 0 auto;
     max-width: 80rem;
 }
@@ -207,7 +228,7 @@ body {
 }
 
 .Tour__places {
-    margin: 3.2rem -8px 7rem;
+    margin: 3.2rem -8px 0;
 }
 .Tour__item {
     float: left;
@@ -254,6 +275,11 @@ body {
     margin-top: 4.6rem;
     font-size: 18px;
 }
+.Contact__body::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 .Contact__info {
     width: 50%;
     float: left;
@@ -272,21 +298,7 @@ body {
     border: 1px solid #ccc;
     width: 100%;
 }
-.row {
-    margin-left: -8px;
-    margin-right: -8px;
-}
-.col {
-    float: left;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-.col-half {
-    width: 50%;
-}
-.col-full {
-    width: 100%;
-}
+
 .contact__form button {
     background-color: #000;
     color: #fff;
@@ -300,9 +312,25 @@ body {
     display: block;
     clear: both;
 }
-.mt-8 {
-    padding-top: 8px;
+.map {
+    width: 100%;
 }
-.mt-16 {
-    padding-top: 16px;
+.icon a {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 2.5rem;
+}
+.icon a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+.copyWrite {
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+.copyWrite a {
+    color: rgba(0, 0, 0, 0.6);
 }
