@@ -3,13 +3,32 @@
         display: none;
     }
 }
+/* tablet and mobile */
+@media (max-width: 1032px) {
+    .text__btn {
+        padding: 1.6rem 2rem;
+    }
+    .form-control {
+        padding: 15px;
+    }
+    .icon a {
+        margin: 0 8px;
+    }
+    .copyWrite a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+    .Contact__info p {
+        line-height: 2;
+    }
+}
 @media (min-width: 740px) and (max-width: 1023px) {
     .header__menu {
         display: none;
     }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     .s-full-width {
         width: 100%;
     }
