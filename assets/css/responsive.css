@@ -10,6 +10,9 @@
 }
 
 @media (max-width: 740px) {
+    .s-full-width {
+        width: 100%;
+    }
     .header {
         overflow: hidden;
     }
@@ -21,5 +24,24 @@
     }
     .menu__item {
         display: block;
+    }
+    .menu__item--subMenu {
+        position: initial;
+        background-color: #333;
+    }
+    .menu__item--subMenu a {
+        color: #fff;
+        padding: 0.8rem 4.2rem;
+    }
+    .About__layout--item {
+        width: 100%;
+        margin-top: 31px;
+    }
+    .About__layout--item img {
+        max-width: 60%;
+    }
+    .s-col-full {
+        width: 100%;
+        margin-top: 15px;
     }
 }
